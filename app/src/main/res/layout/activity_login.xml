@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dediwidartodkk.useraccounts.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/lg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/editTextpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login \n"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/textViewDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/linearLayout"
+        android:text="\n\n Belum terdaftar? \n Klik disini untuk daftar"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat" />
+
+</RelativeLayout>
